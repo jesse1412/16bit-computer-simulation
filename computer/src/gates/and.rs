@@ -1,4 +1,4 @@
-pub fn gate_and(a: bool, b: bool) -> bool {
+pub fn and_gate(a: bool, b: bool) -> bool {
     a && b
 }
 
@@ -8,21 +8,21 @@ mod tests {
 
     #[test]
     fn test_1_0_case() {
-        assert!(!gate_and(true, false))
+        assert!(!and_gate(true, false))
     }
 
     #[test]
     fn test_0_1_case() {
-        assert!(!gate_and(false, true))
+        assert!(!and_gate(false, true))
     }
 
     #[test]
     fn test_1_1_case() {
-        assert!(gate_and(true, true))
+        assert!(and_gate(true, true))
     }
 
     #[test]
     fn test_0_0_case() {
-        assert!(!gate_and(false, false))
+        assert!(!and_gate(false, false))
     }
 }
