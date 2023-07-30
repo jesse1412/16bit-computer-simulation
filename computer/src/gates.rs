@@ -1,3 +1,9 @@
 pub mod and;
+pub mod and_16;
+pub mod dmux;
+pub mod mux;
 pub mod nand;
 pub mod not;
+pub mod not_16;
+pub mod or;
+pub mod xor;

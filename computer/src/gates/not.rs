@@ -1,4 +1,4 @@
-pub fn gate_not(a: bool) -> bool {
+pub fn not_gate(a: bool) -> bool {
     !a
 }
 
@@ -8,11 +8,11 @@ mod tests {
 
     #[test]
     fn test_1() {
-        assert!(!gate_not(true))
+        assert!(!not_gate(true))
     }
 
     #[test]
     fn test_0() {
-        assert!(gate_not(false))
+        assert!(not_gate(false))
     }
 }
