@@ -1,6 +1,9 @@
 use crate::gates::and;
 
 pub fn and_16_gate(bus_a: &[bool; 16], bus_b: &[bool; 16]) -> [bool; 16] {
+    /* Everything must come from our nand,
+    so we won't use any loops solutions here
+    as we haven't invented looping yet. */
     [
         and::and_gate(bus_a[0], bus_b[0]),
         and::and_gate(bus_a[1], bus_b[1]),

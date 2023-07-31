@@ -1,6 +1,9 @@
 use crate::gates::mux;
 
 pub fn mux_16_gate(a: &[bool; 16], b: &[bool; 16], switch: bool) -> [bool; 16] {
+    /* Everything must come from our nand,
+    so we won't use any loops solutions here
+    as we haven't invented looping yet. */
     [
         mux::mux_gate(a[0], b[0], switch),
         mux::mux_gate(a[1], b[1], switch),

@@ -1,5 +1,6 @@
 use crate::gates::or;
 
+#[allow(clippy::too_many_arguments)]
 pub fn or_8_way_gate(
     a: bool,
     b: bool,
