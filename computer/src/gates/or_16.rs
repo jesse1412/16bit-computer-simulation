@@ -1,6 +1,6 @@
 use crate::gates::or;
 
-fn or_16_gate(a: &[bool; 16], b: &[bool; 16]) -> [bool; 16] {
+pub fn or_16_gate(a: &[bool; 16], b: &[bool; 16]) -> [bool; 16] {
     [
         or::or_gate(a[0], b[0]),
         or::or_gate(a[1], b[1]),

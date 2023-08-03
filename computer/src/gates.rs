@@ -1,9 +1,11 @@
 pub mod and;
 pub mod and_16;
 pub mod dmux;
+pub mod dmux_4_way;
 pub mod mux;
 pub mod mux_16;
 pub mod mux_4_way_16;
+pub mod mux_8_way_16;
 pub mod nand;
 pub mod not;
 pub mod not_16;
